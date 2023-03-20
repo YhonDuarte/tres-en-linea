@@ -1,10 +1,13 @@
 .board{
     display: flex;
     flex-direction: column;
+    margin-top: 80px ;
+ 
 
 }
 
 .row {
     display:flex;
+   
     
 }

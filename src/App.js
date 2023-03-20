@@ -70,8 +70,15 @@ const App=() =>{
         setWinningSquares([])
       }
   return (
+    <div className="game">
+      <div className="points">
+ <ScoreBoard turn={turn} o={score.o} x={score.x}/>   
+ <Reset setSquares={setSquares} setTurno={setTurno} setScort={setScort}/>
+      </div>
+        
+
     <div className="container">
-      {!squares.includes(null) & turn !== null ? <div className="titulo empate">EMPATE</div> : turn === null ? <div className="titulo genial">¡GENIAL!</div> : <div className="titulo">TRES EN LINEA</div> 
+      {!squares.includes(null) & turn !== null ? <div className="titulo empate">EMPATE</div> : turn === null ? <div className="titulo genial">¡GENIAL!</div> : <div className="titulo">Tres en linea</div> 
        }
         {  }
       <Board 
@@ -80,10 +87,11 @@ const App=() =>{
       onClick={handleClick}
       turn={turn}
       />
-      <ScoreBoard o={score.o} x={score.x}/>
-      <Reset setSquares={setSquares} setTurno={setTurno} setScort={setScort}/>
+     
     </div>
 
+   
+      </div>
   );
 }
 

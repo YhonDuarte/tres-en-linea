@@ -16,10 +16,10 @@ import './reset.css'
     return(
         <div className="reset">
               <button onClick={handleClick}>
-            resetar tablero
+            Nueva partida
         </button>
         <button onClick={handlePoint}>
-            resetear puntaje
+            Resetear puntaje
         </button>
 
         </div>

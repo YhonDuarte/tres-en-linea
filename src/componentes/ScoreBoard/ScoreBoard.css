@@ -1,19 +1,64 @@
 .score-board {
     width: 320px;
     display:grid;
+    padding: 10px;
     grid-auto-flow:column;
-    margin-top:5px;
 }
 
-.score-board div{
-    color :white;
+.score-board{
     text-align: center;
-    font-size: 2rem;
-    padding:5px;
-    font-weight:  bold;
-    background-color:#4392f1 ;
+    font-size: 50px;
+    align-items: center;
+    justify-content: space-between;
+
 }
+h1{
+    margin: 0px;
+
+}
+
+.containerBoar{
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.circulo{
+    width: 70px;
+    background-color:#4392f1 ;
+    border-radius: 10px;
+    padding: 5px 10px;
+    overflow: hidden;
+}
+
 
 .score-board div:first-child {
+    width: 70px;
     background-color: #cd493a;
+    border-radius: 10px;
+    padding: 5px 10px;
+    overflow: hidden;
+
+}
+
+
+
+.square--xturn{
+    margin: auto;
+    width:70px ;
+    height:70px;
+    background-color: #cd493a;
+    transition: all .2s;
+    clip-path: polygon(20% 0, 0 20%, 30% 50%, 0 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0, 50% 30%);
+  
+}
+.square--oturn{
+    background-color: #4392f1;
+    width:70px ;
+    height: 70px;
+    transition: all .2s;
+    clip-path: circle( 50% at 50% 50%);
+    margin: auto;    
 }
